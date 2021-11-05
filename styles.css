@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant:wght@400;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  /* height: 100vh;
+  width: 100vw; */
+}
+body {
+  background-color: #fff;
+
+  text-align: center;
+
+  color: #fff;
+  font-family: "Cinzel", serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  margin: 0;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(233, 232, 227);
+  height: auto;
+  justify-content: space-around;
+  position: fixed;
+  width: 100vw;
+  /* height: 150px; */
+  top: 0;
+  left: 0;
+}
+#header-img {
+  justify-content: flex-start;
+  width: auto;
+  height: 150px;
+  width: auto;
+  background: transparent;
+}
+h1 {
+  text-transform: uppercase;
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+  padding: 50px;
+  font-size: 2rem;
+}
+#nav-bar {
+  text-align: center;
+  justify-content: center;
+}
+#nav-bar a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 20px 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #000;
+}
+#nav-bar li {
+  list-style-type: none;
+  /* display: flex;
+  flex-direction: row;
+ margin: 0 2%;
+ color: #000;
+  width: 400px; */
+  /* background-color: crimson; */
+  margin-top: 35px;
+  margin-bottom: 35px;
+  text-align: center;
+  justify-content: center;
+}
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+.intro {
+  scroll-margin-top: 80px;
+}
+.intro img {
+  /* width: 100vw; */
+  height: 100vh;
+  background-image: center center contain;
+}
+main {
+  width: 1200px;
+  /* min-height: 1500px; */
+  flex-direction: column;
+  /* margin-top: 150px; */
+  display: flex;
+  justify-content: center;
+  margin: 150px auto 50px auto;
+  /* align-items: center; */
+}
+h2,
+p {
+  margin: 40px;
+}
+.guitar-pics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.guitar-pics section:hover {
+  transform: scale(1.05);
+  transition: ease-in-out 0.2s;
+}
+.guitars {
+  width: 400px;
+  height: 500px;
+  background-position: cover;
+  padding: 0 40px 0 40px;
+}
+.video iframe {
+  width: 1300px;
+  /* height: auto; */
+}
+.listing-item {
+  padding: 0 10px 0 10px;
+}
+#form {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(221, 218, 204);
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 5px;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 600px;
+  margin: 0 auto 0 auto;
+}
+.email-box {
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+}
+.email-box label {
+  padding-right: 10px;
+}
+.submit-box {
+  background-color: rgb(180, 179, 172);
+  cursor: pointer;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 5px;
+  width: 100px;
+}
+.submit-box:hover {
+  transform: scale(1.05);
+  transition: ease-in-out 0.2s;
+}
+#submit {
+  background: transparent;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background-color: rgb(233, 232, 227);
+}
+
+/* pricing */
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+body {
+  background: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+}
+#title {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-top: 100px;
+}
+.hover-table-layout {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.listing-item {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  float: left;
+  background: #fff;
+  border-radius: 10px;
+  z-index: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+.listing-item:hover,
+.listing-item.active {
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  transform: scale(1.03);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 2;
+}
+.listing-item .listing {
+  padding: 20px;
+  position: relative;
+}
+.listing-item .listing:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -o-calc(50% - 15px);
+  left: -moz-calc(50% - 15px);
+  left: -webkit-calc(50% - 15px);
+  left: calc(50% - 15px);
+  border-bottom: 20px solid #fff;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+figure.image img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+figure.image {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+figure.image figcaption {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  bottom: 4px;
+  background: rgba(0, 0, 0, 0.6);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+figcaption .caption {
+  position: relative;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+figcaption h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+figcaption p {
+  color: white;
+  font-size: 12px;
+}
+.listing h4 {
+  font-size: 13px;
+  text-align: center;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+.listing h4:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+.listing-item:hover figure.image figcaption {
+  background: rgba(238, 221, 221, 0.2);
+}
+@media only screen and (min-width: 540px) {
+  .listing-item {
+    display: block;
+    width: -webkit-calc(100%/3);
+    width: -moz-calc(100%/3);
+    width: calc(100% / 3);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .hover-table-layout {
+    padding: 30px;
+  }
+}
+
+/* Media query */
+
+@media (min-width: 1200px) {
+  header {
+    width: 100%;
+  }
+}
